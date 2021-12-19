@@ -1,5 +1,7 @@
 # Maria Komardina
 
+![My photo](C:\Users\admin\Desktop\i.jpeg)
+
 ## Contacts
 
 * ***Phone:*** +7 (920) 835-78-35
