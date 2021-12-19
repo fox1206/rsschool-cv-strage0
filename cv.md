@@ -41,6 +41,7 @@ I decided to study in order to gain new knowledge and start working at IT.
 
 ## Code example
 
+* ***javascript***
 
     ```javascript
     function task6(n) {
@@ -55,7 +56,8 @@ I decided to study in order to gain new knowledge and start working at IT.
         return newText;
     }
     ```
-
+    
+* ***java***
 
     ```java
     @GetMapping("/allAgeGroup/{id}/editGroup")
