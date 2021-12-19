@@ -42,40 +42,39 @@ I decided to study in order to gain new knowledge and start working at IT.
 ## Code example
 
 
-    ```javascript
-        function task6(n) {
-            let newText = "";
-            while(n > 0){
-                text = prompt("Ввод строки: ");
-                newText += text;  
-                newText += " "; 
-                //console.log(newText);      
-                n--;
-            }
-            return newText;
+```javascript
+    function task6(n) {
+        let newText = "";
+        while(n > 0){
+            text = prompt("Ввод строки: ");
+            newText += text;  
+            newText += " "; 
+            //console.log(newText);      
+            n--;
         }
-    ```
+        return newText;
+    }
+```
 
 
-    ```java
-        @GetMapping("/allAgeGroup/{id}/editGroup")
-        public String studentEdit(@PathVariable(value = "id") long id, Model model){
+```java
+    @GetMapping("/allAgeGroup/{id}/editGroup")
+    public String studentEdit(@PathVariable(value = "id") long id, Model model){
         
-            if (!ageGroupRepository.existsById(id)){
-                return "redirect:/allAgeGroup";
-            }
-
-            Optional<AgeGroup> groupOptional = ageGroupRepository.findById(id);
-
-            ArrayList<AgeGroup> result = new ArrayList<>();
-            groupOptional.ifPresent(result::add);
-            model.addAttribute("groupOptional", result);
-
-            LOGGER.info("Переход на страницу редактирования группы!");
-
-            return "edit/group-edit";
+        if (!ageGroupRepository.existsById(id)){
+            return "redirect:/allAgeGroup";
         }
-    ```
+
+        Optional<AgeGroup> groupOptional = ageGroupRepository.findById(id);
+
+        ArrayList<AgeGroup> result = new ArrayList<>();
+        groupOptional.ifPresent(result::add);
+        model.addAttribute("groupOptional", result);
+        LOGGER.info("Переход на страницу редактирования группы!");
+        
+        return "edit/group-edit";
+    }
+```
 
 ## Experience
 
