@@ -43,6 +43,7 @@ I decided to study in order to gain new knowledge and start working at IT.
 
 * ***javascript***
 
+
     ```javascript
     function task6(n) {
         let newText = "";
@@ -56,8 +57,10 @@ I decided to study in order to gain new knowledge and start working at IT.
         return newText;
     }
     ```
-    
+
+
 * ***java***
+
 
     ```java
     @GetMapping("/allAgeGroup/{id}/editGroup")
