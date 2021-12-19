@@ -42,7 +42,7 @@ I decided to study in order to gain new knowledge and start working at IT.
 ## Code example
 
 
-```javascript
+    ```javascript
     function task6(n) {
         let newText = "";
         while(n > 0){
@@ -54,10 +54,10 @@ I decided to study in order to gain new knowledge and start working at IT.
         }
         return newText;
     }
-```
+    ```
 
 
-```java
+    ```java
     @GetMapping("/allAgeGroup/{id}/editGroup")
     public String studentEdit(@PathVariable(value = "id") long id, Model model){
         
@@ -74,7 +74,7 @@ I decided to study in order to gain new knowledge and start working at IT.
         
         return "edit/group-edit";
     }
-```
+    ```
 
 ## Experience
 
