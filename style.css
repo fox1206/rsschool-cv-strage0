@@ -187,3 +187,24 @@ body {
   background: linear-gradient(to left, #333, #9400d3);
 }
 
+.footer {
+  margin: auto;
+  width: 100%;
+  background-color: #333;
+  color: #bf8ed4;
+}
+  
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0px;
+}
+  
+.logo {
+  width: 80px;
+}
+  
+.githab a {
+  text-decoration: none;
+  color: #bf8ed4;
+}
