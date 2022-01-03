@@ -208,3 +208,77 @@ body {
   text-decoration: none;
   color: #bf8ed4;
 }
+
+/* for screen < 700px */
+@media screen and (max-width: 850px) { 
+ .menu ul {
+    display: block;
+    width: 100%;
+    margin-top: 0px;
+    background: linear-gradient(to top, #333, #9400d3);
+  }
+  
+  .menu li {
+    float: none;
+    text-align: center;
+  }
+  
+  .el-menu {
+    padding: 5px 0px;
+  }
+  
+  .text-name {
+    text-align: center;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grey-area {
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  
+  .main-info {
+    padding: 0px 30px;
+    background-color: #333;
+  }
+  
+  .main-info p {
+    padding-right: 20px;
+  }
+  
+  .aside-info {
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pre {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .path {
+    overflow: hidden;
+  }
+  
+  .about-me h2,
+  .education h2,
+  .courses h2,
+  .code h2,
+  .projects h2 {
+    padding: 5px 0px;
+    padding-left: 16px;
+    background: linear-gradient(to left, #333, #333);
+  }
+  
+  .footer {
+    background: linear-gradient(to bottom, #333, #9400d3);
+  } 
+}
