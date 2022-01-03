@@ -1,6 +1,6 @@
 * {
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
     box-sizing: border-box;
 }
 
@@ -140,5 +140,50 @@ body {
   border-top-right-radius: 15px;
   background: linear-gradient(to top, #333, #9400d3);
   background-color: #9400d3;
+}
+
+.point {
+  text-transform: uppercase;
+}
+  
+.element {
+  list-style-type: circle;
+}
+  
+.list-contacts li {
+  text-align: left;
+}
+  
+.list-contacts a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.about-me,
+.education,
+.courses,
+.code,
+.projects {
+  padding-bottom: 30px;
+}
+
+.about-me p {
+  padding-left: 25px;
+}
+
+.projects a {
+  padding-left: 25px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.about-me h2,
+.education h2,
+.courses h2,
+.code h2,
+.projects h2 {
+  padding: 5px 0px;
+  padding-left: 16px;
+  background: linear-gradient(to left, #333, #9400d3);
 }
 
