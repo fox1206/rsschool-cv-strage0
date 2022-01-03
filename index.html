@@ -4,9 +4,151 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>cv</title>
+    <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./assets/img/lichnoe-delo-70x70.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <div class="header-content">
+          <nav class="menu">
+            <ul>
+              <li><a class="el-menu" href="#contact"><span class="capslook">Contacts</span></a></li>
+              <li><a class="el-menu" href="#summaru"><span class="capslook">About me</span></a></li>
+              <li><a class="el-menu" href="#skill"><span class="capslook">Skills</span></a></li>
+              <li><a class="el-menu" href="#engl"><span class="capslook">English</span></a></li>
+              <li><a class="el-menu" href="#educat"><span class="capslook">Education</span></a></li>
+              <li><a class="el-menu" href="#cours"><span class="capslook">Courses</span></a></li>
+              <li><a class="el-menu" href="#code"><span class="capslook">Code</span></a></li>
+              <li><a class="el-menu" href="#proj"><span class="capslook">Projects</span></a></li>
+            </ul>
+          </nav>
+          <div class="text-name">
+            <h1 class="name"><span class="capslook">Mariya Komardina</span></h1>
+            <p><span class="capslook">Junior front-end developer</span></p>      
+          </div>
+        </div>    
+      </header>
+
+      <main class="main">
+        <div class="main-content">
+          <div class="aside-info">
+            <div class="grey-area-p">
+              <div class="photo">
+                <img src="./assets/img/i.jpeg" alt="photo">
+              </div>
+            </div>
+            <div class="grey-area">
+              <div class="box-info">
+                <section class="contacts">
+                  <h2 class="point" id="contact">Contacts</h2>
+                  <div class="list-contacts">
+                    <ul>
+                      <li class="element"><span>Bryansk, Russia</span></li>
+                      <li class="element"><a href="tel:+79208357835">89208357835</a></li>
+                      <li class="element"><a href="mailto:fox_kom@internet.ru">fox_kom@internet.ru</a></li>
+                      <li class="element"><a href="https://github.com/fox1206">fox1206</a></li>
+                      <li class="element"><span>Maru_@IMP...Fox...</span></li>
+                    </ul>
+                  </div>
+                </section>
+                <section class="skills">
+                  <h2 class="point" id="skill">Skills</h2>
+                  <div class="list-skills">
+                    <ul>
+                      <li class="element"><span>HTML/CSS</span></li>
+                      <li class="element"><span>JavaScript</span></li>
+                      <li class="element"><span>Java</span></li>
+                      <li class="element"><span>Spring Framework</span></li>
+                      <li class="element"><span>Hibernate</span></li>
+                      <li class="element"><span>Thymeleaf</span></li>
+                      <li class="element"><span>MySQL</span></li>
+                    </ul>
+                  </div>
+                </section>
+                <section class="english">
+                  <h2 class="point" id="engl">English</h2>
+                  <div class="list-english">
+                    <ul>
+                      <li class="element"><span>A1</span></li>
+                      <li class="element"><span>A2 - in process</span></li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+    
+          <div class="main-info">
+            <section class="about-me">
+              <h2 class="point" id="summaru">About me</h2>
+              <p>I recently left the banking sector and decided to study programming. I have completed training courses in java. Now I am studying at the RSSchool online school and it is very exciting and interesting. My goal is to learn JavaScript, Ajax at a good level to create responsive applications. I would also like to work under the guidance of an experienced developer to gain hands-on experience. I am in search of a job for the junior position.</p>
+            </section>
+    
+            <section class="education">
+              <h2 class="point" id="educat">Education</h2>
+              <div class="list-education">
+                <ul>
+                  <li class="element"><span><b>Vladivostok: </b>Far Eastern Federal University. Applied computer science in economics</span></li>
+                  <li class="element"><span><b>Yuzhno-Sakhalinsk: </b>Sakhalin State university. Administrative reform and organization of anti-corruption at the municipal level</span></li>
+                </ul>
+              </div>
+            </section>
+    
+            <section class="courses">
+              <h2 class="point" id="cours">Courses</h2>
+              <div class="list-courses">
+                <ul>
+                  <li class="element"><span>Academy Step. Java programming Language</span></li>
+                  <li class="element"><span>RSSchool in process</span></li>
+              </ul>
+              </div>
+            </section>
+    
+            <section class="code" id="code">
+              <h2 class="point">Code</h2>
+                <pre class="pre">
+                  <code>
+          function task6(n) {
+              let newText = "";
+                while(n > 0){
+                  text = prompt("Ввод строки: ");
+                  newText += text;  
+                  newText += " "; 
+                  //console.log(newText);      
+                n--;
+              }
+              return newText;
+          }
+                  </code>
+                </pre>
+            </section>
+    
+            <section class="projects">
+              <h2 class="point" id="proj">Projects</h2>
+            <div class="path">
+              <a href="https://tutorappkurilsk.herokuapp.com/">https://tutorappkurilsk.herokuapp.com/</a>
+            </div>
+            </section>
+    
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="year">2022</div>
+          <div class="githab"><a href="https://github.com/fox1206">fox1206</a></div>
+          <div class="logo">
+            <a href="https://rs.school/js/">
+              <img class="logo" src="./assets/svg/rs_school_js.svg" alt="rsschool">
+            </a>
+          </div>
+        </div>
+      </footer>  
     
 </body>
 </html>

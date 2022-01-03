@@ -1,4 +1,284 @@
-*{
-    padding: 0;
+* {
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+  
+body {
+  margin: 0 auto;
+  max-width: 70em;
+  min-width: 370px;
+  min-height: 100vh;
+  line-height: 1.7;
+  font-family: 'Gelasio', serif;
+  color: #ffffff;
+}
+
+.capslook {
+  text-transform: uppercase;
+}
+  
+.header {  
+  background-color: #333;
+  padding-bottom: 30px;
+}
+  
+.header-content,
+.main-content,
+.footer-content {
+  margin: 0 auto;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;    
+}
+  
+.menu ul {
+  display: inline-block;
+  justify-content: flex-end;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: #9400d3;
+  background: linear-gradient(to right, #333, #9400d3);
+}
+  
+.menu li {
+  float: left;
+}
+  
+.el-menu {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #ffffff;
+}
+  
+.el-menu:hover {
+  transition: 3s;
+  background-color: #bf8ed4;
+}
+  
+.text-name {
+  padding: 0 30px;
+  text-align: end;
+}
+  
+.text-name p,
+.text-name h1 {
+  margin: 0;
+  color: #bf8ed4;
+}
+
+.main-content,
+.footer-content {
+  padding: 0 30px;
+}
+
+.main {
+  margin: auto;
+  width: 100%;
+  background-color: #333;
+}
+  
+.main-content {
+  width: 100%;
+  display: flex;
+}
+
+.aside-info {
+  padding: 0px 30px;
+}
+  
+.photo {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  width: 215px;
+  height: 215px;
+  border-radius: 50%;
+  border: 14px solid darkviolet;
+  overflow: hidden;
+}
+  
+.photo img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+  
+.box-info {
+  width: 100%;
+}
+  
+.box-info section {
+  width: 100%;
+  margin: 0;
+  padding: 0 0 30px 0;
+}
+  
+.grey-area-p {
+  position: relative;
+  padding: 0px 15px;  
+}
+  
+.grey-area {
+  width: 100%;
+  position: relative;
+  top: -120px;
+  padding: 150px 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: linear-gradient(to top, #333, #9400d3);
+  background-color: #9400d3;
+}
+
+.point {
+  text-transform: uppercase;
+}
+  
+.element {
+  list-style-type: circle;
+}
+  
+.list-contacts li {
+  text-align: left;
+}
+  
+.list-contacts a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.about-me,
+.education,
+.courses,
+.code,
+.projects {
+  padding-bottom: 30px;
+}
+
+.about-me p {
+  padding-left: 25px;
+}
+
+.projects a {
+  padding-left: 25px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.about-me h2,
+.education h2,
+.courses h2,
+.code h2,
+.projects h2 {
+  padding: 5px 0px;
+  padding-left: 16px;
+  background: linear-gradient(to left, #333, #9400d3);
+}
+
+.footer {
+  margin: auto;
+  width: 100%;
+  background-color: #333;
+  color: #bf8ed4;
+}
+  
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0px;
+}
+  
+.logo {
+  width: 80px;
+}
+  
+.githab a {
+  text-decoration: none;
+  color: #bf8ed4;
+}
+
+/* for screen < 700px */
+@media screen and (max-width: 850px) { 
+ .menu ul {
+    display: block;
+    width: 100%;
+    margin-top: 0px;
+    background: linear-gradient(to top, #333, #9400d3);
+  }
+  
+  .menu li {
+    float: none;
+    text-align: center;
+  }
+  
+  .el-menu {
+    padding: 5px 0px;
+  }
+  
+  .text-name {
+    text-align: center;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grey-area {
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  
+  .main-info {
+    padding: 0px 30px;
+    background-color: #333;
+  }
+  
+  .main-info p {
+    padding-right: 20px;
+  }
+  
+  .aside-info {
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pre {
     margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .path {
+    overflow: hidden;
+  }
+  
+  .about-me h2,
+  .education h2,
+  .courses h2,
+  .code h2,
+  .projects h2 {
+    padding: 5px 0px;
+    padding-left: 16px;
+    background: linear-gradient(to left, #333, #333);
+  }
+  
+  .footer {
+    background: linear-gradient(to bottom, #333, #9400d3);
+  } 
 }
