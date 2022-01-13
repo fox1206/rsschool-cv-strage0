@@ -85,6 +85,8 @@ I decided to study in order to gain new knowledge and start working at IT.
 
 [Example work](https://tutorappkurilsk.herokuapp.com/)
 
+[Portfolio](https://rolling-scopes-school.github.io/fox1206-JSFEPRESCHOOL/portfolio/)
+
 ## Education
 
 * ***University:*** Far Eastern Federal University. Applied computer science in economics
