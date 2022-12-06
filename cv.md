@@ -60,6 +60,7 @@ let number = Math.sqrt(num);
     + [Gallery](https://fox1206.github.io/gallery-image/gallery/)
     + [Slider](https://fox1206.github.io/games/gallery/)
     + [Drag-drop](https://fox1206.github.io/games/dragdrop/)
+    + [Dashboard](https://fox1206.github.io/Practic/)
 
 
 
