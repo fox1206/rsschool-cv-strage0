@@ -20,3 +20,22 @@ I also love to travel and do yoga, yoga helps concentration.
 
 
 
+
+## Skills
+* Markdown
+* HTML5
+* CSS3
+* Tailwind
+* Material UI
+* JavaScript Basics
+* React
+* Git
+* GitHub
+* Java Core
+* Thymeleaf
+* Spring MVC
+* Hibernate
+* MySQL
+
+
+
