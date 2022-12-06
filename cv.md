@@ -20,7 +20,6 @@ I also love to travel and do yoga, yoga helps concentration.
 
 
 
-
 ## Skills
 * Markdown
 * HTML5
@@ -52,3 +51,15 @@ let number = Math.sqrt(num);
   }return number > 1;
 }
 ```
+
+
+
+## Projects
+* ***js:***
+    + [Portfolio](https://rolling-scopes-school.github.io/fox1206-JSFEPRESCHOOL/portfolio/)
+    + [Gallery](https://fox1206.github.io/gallery-image/gallery/)
+    + [Slider](https://fox1206.github.io/games/gallery/)
+    + [Drag-drop](https://fox1206.github.io/games/dragdrop/)
+
+
+
