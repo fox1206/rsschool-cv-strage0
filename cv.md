@@ -69,3 +69,9 @@ let number = Math.sqrt(num);
     + Academy Step. Java programming Language
     + RS School course "JavaScript/Front-end". Strage0
     + Redev course "JavaScript" (in progress)
+
+
+
+## Languages:
+* Russian - Native
+* English - A1 (A2 - in progress)
