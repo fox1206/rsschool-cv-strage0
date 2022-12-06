@@ -39,3 +39,16 @@ I also love to travel and do yoga, yoga helps concentration.
 
 
 
+## Code example
+***Task from Codewars:*** Define a function that takes one integer argument and returns logical value or depending on if the integer is a prime. true false
+
+```
+function isPrime(num) {
+let number = Math.sqrt(num);
+  for (let i = 2; i <= number; i++) {
+    if (num % i == 0) {
+      return false;
+    }
+  }return number > 1;
+}
+```
