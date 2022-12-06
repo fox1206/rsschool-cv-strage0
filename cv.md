@@ -63,3 +63,9 @@ let number = Math.sqrt(num);
 
 
 
+## Education and Courses
+* ***University:*** Far Eastern Federal University. Applied computer science in economics
+* ***Courses:***    
+    + Academy Step. Java programming Language
+    + RS School course "JavaScript/Front-end". Strage0
+    + Redev course "JavaScript" (in progress)
