@@ -52,6 +52,7 @@ main .container{
 
 /* ==================== LEFT MENU START ==================== */
 .aside{
+  position: relative;
   background-color: var(--color-dark);
 }
 
@@ -81,6 +82,29 @@ main .container{
 .aside .links li a:hover {
   color: var(--color-green);
   transition: all .3s ease;
+}
+
+.aside .footer{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.aside .rs-school-logo svg,
+.aside .github-logo svg{
+  width: 100%;
+  fill: var(--color-extra-gray);
+  filter: blur(2px);
+}
+
+.aside .rs-school-logo svg:hover,
+.aside .github-logo svg:hover{
+  fill: var(--color-green);
+  filter: blur(0px);
+  transition: all .3s ease-in-out;
 }
 /* ==================== LEFT MENU END ==================== */
 
