@@ -1,5 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Franklin:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=La+Belle+Aurore&family=Libre+Franklin:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=La+Belle+Aurore&family=Libre+Franklin:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+  --color-dark: #181818;
+  --color-dark-gray: #1d1d1d;
+  --color-green: #08FDD8;
+  --color-white: #FFFFFF;
+  --color-lite-gray: #909096;
+  --color-extra-gray: #8D8D8D;
+  --color-orange: #FA9370;
+  --color-red: #ec2f58;
+  --color-green-lite: rgba(8, 253, 216, .3);
+
+  --padding-section: 30px;
+  --padding-1: 5px;  
+  --padding-2: 30px 0 0 5px;
+}
+/* font-family: 'Libre Franklin', sans-serif; */
+/* font-family: 'La Belle Aurore', cursive; */
+/* font-family: 'Rubik', sans-serif; */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
+  text-decoration: none;
+  list-style: none;
 }
+
+body{
+  font-family: 'Rubik', sans-serif;
+  color: var(--color-white);
+}
+
+/* ==================== MAIN CONTENT START ==================== */
+
+main{
+  height: 100vh;
+  background-color: var(--color-dark);
+}
+
+main .container{
+  display: grid;
+  grid-template-columns: 250px auto;
+  max-width: 1490px;
+  margin: 0 auto;
+}
+
+/* ==================== LEFT MENU START ==================== */
+.aside{
+  background-color: var(--color-dark);
+}
+/* ==================== LEFT MENU END ==================== */
+
+
+/* ==================== SECTION GREETING START ==================== */
+main section{
+  padding: var(--padding-section);
+}
+
+main .main-content .greeting{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--color-dark-gray);
+}
+
+main .main-content h1{
+  font-size: 103px;
+  /* word-spacing: -15px; */
+  letter-spacing: -7px;
+  line-height: 95px;
+}
+
+main .main-content h1 .first-letter,
+main .main-content h1 .last-letter{
+  position: relative;
+  display: inline;
+}
+
+main .main-content h1 .last-letter{
+  left: -82px;
+}
+
+main .main-content h1 .first-letter span:nth-child(1){
+  color:var(--color-green);
+}
+
+main .main-content h1 .first-letter span:nth-child(2){
+  position: relative;
+  left: -82px;
+  color:var(--color-red);
+}
+
+main .letter:hover{
+  position: relative;
+  top: -10px;
+  transition: .3s ease;
+  color: var(--color-green);
+}
+
+main .main-content .job-title{
+  padding: var(--padding-2);
+  font-size: 30px;
+  letter-spacing: 11px;
+  color: var(--color-extra-gray);
+}
+
+main .main-content .about-me{
+  padding: var(--padding-2);
+  color: var(--color-white);
+  line-height: 20px;
+}
+
+main .main-content .contact-me {
+  position: relative;
+  top: 50px;
+  padding: 10px 45px;
+  border: 1px solid var(--color-green);
+  color: var(--color-green);
+}
+
+
+
+
+/* ==================== SECTION GREETING END ==================== */
+
+/* ==================== MAIN CONTENT END ==================== */
