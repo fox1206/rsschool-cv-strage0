@@ -33,6 +33,10 @@
   list-style: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Rubik', sans-serif;
   color: var(--color-white);
