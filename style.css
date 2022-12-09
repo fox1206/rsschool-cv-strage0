@@ -114,9 +114,20 @@ main .container{
   position: absolute;
   bottom: 0;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.aside .footer div{
+  display: flex;
   align-items: center;
   gap: 20px;
   padding: 10px;
+}
+
+.aside .footer p{
+  color: var(--color-extra-gray);
 }
 
 .aside .rs-school-logo svg,
@@ -381,6 +392,8 @@ main .my-code .project-description{
   background-repeat: no-repeat;
 }
 /* ==================== SECTION MY PROJECT END ==================== */
+
+/* ==================== SECTION EDUCATION START ==================== */
 main .education{
   padding: var(--padding-2);
 }
@@ -402,7 +415,9 @@ main .education table tbody tr:last-child td{
 main .education table tbody a{
   color: var(--color-extra-gray);
 }
-/* ==================== SECTION EDUCATION START ==================== */
-
 /* ==================== SECTION EDUCATION END ==================== */
+
+/* ==================== SECTION CONTACTS START ==================== */
+
+/* ==================== SECTION CONTACTS END ==================== */
 /* ==================== MAIN CONTENT END ==================== */
