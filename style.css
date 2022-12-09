@@ -84,13 +84,16 @@ header .container svg{
   fill: var(--color-red);
 }
 
+header .sound{
+  cursor: pointer;
+}
+
 header .container svg.change{
   fill: var(--color-green);
 }
 
 header .container .sound-off{
   color: var(--color-red);
-  cursor: pointer;
 }
 
 header .container .sound-off.change{
@@ -100,7 +103,6 @@ header .container .sound-off.change{
 header .container .sound-on{
   display: none;
   color: var(--color-green);
-  cursor: pointer;
 }
 
 header .container .sound-on.change{
@@ -520,6 +522,11 @@ main .my-contacts .my-info{
   filter: none;
 }
 
-
+main iframe{
+  margin-top: 30px;
+  width: 100%;
+  height: 300px;
+  box-shadow: var(--box-shadow);
+}
 /* ==================== SECTION CONTACTS END ==================== */
 /* ==================== MAIN CONTENT END ==================== */
