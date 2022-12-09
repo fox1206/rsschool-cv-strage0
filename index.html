@@ -122,23 +122,50 @@
               <p>Given a string s. You have to return another string such that even-indexed and odd-indexed characters of s are grouped and groups are space-separated.</p>
             </div>
             <div class="code-example">
-              <br>
-                function sortMyString(S) {</br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;let text = '';</br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;let even = '';</br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;let odd = '';</br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;for(let i = 0; i < S.length; i++){</br></S.length>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(i % 2 == 0){</br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;even += S[i];</br>
+              <code>
+                function sortMyString(S) {<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;let text = '';<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;let even = '';<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;let odd = '';<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;for(let i = 0; i < S.length; i++){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(i % 2 == 0){<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;even += S[i];<br>
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else{</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;odd += S[i];</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;}</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;text = even + ' ' + odd;</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;return text;</br>
-                }</br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else{<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;odd += S[i];<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;text = even + ' ' + odd;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;return text;<br>
+                }<br>
               </code>
+            </div>
+          </section>
+
+          <section class="my-projects">
+            <h2>
+              <span class="letter">M</span>
+              <span class="letter">y</span>
+              <span class="letter">&nbsp;&nbsp;</span>
+              <span class="letter">P</span>
+              <span class="letter">r</span>
+              <span class="letter">o</span>
+              <span class="letter">j</span>
+              <span class="letter">e</span>
+              <span class="letter">t</span>
+              <span class="letter">s</span>
+            </h2>
+            <div class="project-description">
+              <p>I present a small collection of projects that were completed during the passage of RSschool.</p>
+            </div>
+            <div class="project-example">
+              <ul>
+                <li><a href="https://rolling-scopes-school.github.io/fox1206-JSFEPRESCHOOL/portfolio/"></a></li>
+                <li><a href="https://fox1206.github.io/gallery-image/gallery/"></a></li>
+                <li><a href="https://fox1206.github.io/games/gallery/"></a></li>
+                <li><a href="https://fox1206.github.io/Practic/"></a></li>
+                <li><a href="https://rolling-scopes-school.github.io/fox1206-JSFEPRESCHOOL2022Q2/travel/"></a></li>
+              </ul>
             </div>
           </section>
         </div>
@@ -146,20 +173,3 @@
     </main>
   </body>
 </html>
-
-
-<!-- function sortMyString(S) {
-  let text = '';
-let even = '';
-let odd = '';
-for(let i = 0; i < S.length; i++){
-  if(i % 2 == 0){
-    even += S[i];
-  }
-  else{
-    odd += S[i];
-  }
-}
-text = even + ' ' + odd;
-  return text;
-} -->

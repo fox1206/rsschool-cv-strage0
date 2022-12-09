@@ -18,6 +18,8 @@
   --padding-section: 30px;
   --padding-1: 5px;  
   --padding-2: 30px 0 0 5px;
+
+  --box-shadow: 0px 5px 20px var(--color-lite-gray);
 }
 /* font-family: 'Libre Franklin', sans-serif; */
 /* font-family: 'La Belle Aurore', cursive; */
@@ -148,7 +150,8 @@ main .main-content{
 
 main .main-content .about-me,
 main .main-content .skills-description,
-main .main-content .task-description{
+main .main-content .task-description,
+main .main-content .project-description{
   padding: var(--padding-2);
   color: var(--color-white);
   line-height: 20px;
@@ -318,4 +321,66 @@ main .my-code .code-example{
   padding: var(--padding-2);
 }
 /* ==================== SECTION MY CODE END ==================== */
+
+/* ==================== SECTION MY PROJECT START ==================== */
+main .my-code .project-description{
+  padding: var(--padding-2);
+}
+
+.project-example ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: var(--padding-2);
+  gap: 30px;
+}
+
+.project-example ul li{
+  height: 200px;
+  filter: grayscale(1) brightness(40%);
+  box-shadow: var(--box-shadow);
+}
+
+.project-example ul li:hover{
+  filter: none;
+  transition: all .3s ease-in-out;
+}
+
+.project-example a{
+  display: block;
+  height: 200px;
+}
+
+.project-example ul li:nth-child(1){
+  background: url('assets/svg/p1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-example ul li:nth-child(2){
+  background: url('assets/svg/p2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-example ul li:nth-child(3){
+  background: url('assets/svg/p3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-example ul li:nth-child(4){
+  background: url('assets/svg/p4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-example ul li:nth-child(5){
+  background: url('assets/svg/p5.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+/* ==================== SECTION MY PROJECT END ==================== */
 /* ==================== MAIN CONTENT END ==================== */
