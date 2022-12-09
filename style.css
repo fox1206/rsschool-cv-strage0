@@ -151,7 +151,8 @@ main .main-content{
 main .main-content .about-me,
 main .main-content .skills-description,
 main .main-content .task-description,
-main .main-content .project-description{
+main .main-content .project-description,
+main .main-content .education-description{
   padding: var(--padding-2);
   color: var(--color-white);
   line-height: 20px;
@@ -351,36 +352,57 @@ main .my-code .project-description{
 }
 
 .project-example ul li:nth-child(1){
-  background: url('assets/svg/p1.png');
+  background: url('assets/img/p1.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .project-example ul li:nth-child(2){
-  background: url('assets/svg/p2.png');
+  background: url('assets/img/p2.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .project-example ul li:nth-child(3){
-  background: url('assets/svg/p3.png');
+  background: url('assets/img/p3.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .project-example ul li:nth-child(4){
-  background: url('assets/svg/p4.png');
+  background: url('assets/img/p4.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .project-example ul li:nth-child(5){
-  background: url('assets/svg/p5.png');
+  background: url('assets/img/p5.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-
-
 /* ==================== SECTION MY PROJECT END ==================== */
+main .education{
+  padding: var(--padding-2);
+}
+
+main .education table{
+  width: 100%;
+  text-align: center;
+}
+
+main .education table tbody td{
+  height: 50px;
+  border-bottom: 1px solid var(--color-lite-gray);
+}
+
+main .education table tbody tr:last-child td{
+  border-bottom: none;
+}
+
+main .education table tbody a{
+  color: var(--color-extra-gray);
+}
+/* ==================== SECTION EDUCATION START ==================== */
+
+/* ==================== SECTION EDUCATION END ==================== */
 /* ==================== MAIN CONTENT END ==================== */
