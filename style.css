@@ -163,7 +163,8 @@ main .main-content .about-me,
 main .main-content .skills-description,
 main .main-content .task-description,
 main .main-content .project-description,
-main .main-content .education-description{
+main .main-content .education-description,
+main .main-content .contacts-description{
   padding: var(--padding-2);
   color: var(--color-white);
   line-height: 20px;
@@ -418,6 +419,41 @@ main .education table tbody a{
 /* ==================== SECTION EDUCATION END ==================== */
 
 /* ==================== SECTION CONTACTS START ==================== */
+.list-contacts{
+  padding: var(--padding-2);
+}
+
+.list-contacts li{
+  height: 50px;
+}
+
+.list-contacts li a{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--color-extra-gray);
+  fill: var(--color-extra-gray);
+  transition: all .3s ease-in-out;
+}
+
+.list-contacts li a p{
+  filter: blur(2px);
+}
+
+.list-contacts li a p:hover{
+  filter: none;
+}
+
+.list-contacts li a:hover{
+  color: var(--color-green);
+  fill: var(--color-green);
+  filter: none;
+}
+
+/* .list-contacts li a svg{
+  fill: var(--color-extra-gray);
+} */
+
 
 /* ==================== SECTION CONTACTS END ==================== */
 /* ==================== MAIN CONTENT END ==================== */
