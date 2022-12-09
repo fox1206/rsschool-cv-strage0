@@ -84,15 +84,27 @@ header .container svg{
   fill: var(--color-red);
 }
 
+header .container svg.change{
+  fill: var(--color-green);
+}
+
 header .container .sound-off{
   color: var(--color-red);
   cursor: pointer;
+}
+
+header .container .sound-off.change{
+  display: none;
 }
 
 header .container .sound-on{
   display: none;
   color: var(--color-green);
   cursor: pointer;
+}
+
+header .container .sound-on.change{
+  display: block;
 }
 /* ==================== HEADER END ==================== */
 
@@ -466,7 +478,12 @@ main .education table tbody tr:last-child td{
 }
 
 main .education table tbody a{
+  transition: all .3s ease-in-out;
   color: var(--color-extra-gray);
+}
+
+main .education table tbody a:hover{
+  color: var(--color-green);
 }
 /* ==================== SECTION EDUCATION END ==================== */
 
