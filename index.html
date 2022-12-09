@@ -109,8 +109,57 @@
               <div class="skill">MySQL</div>
             </div>
           </section>
+
+          <section class="my-code">
+            <h2>
+              <span class="letter">C</span>
+              <span class="letter">o</span>
+              <span class="letter">d</span>
+              <span class="letter">e</span>
+            </h2>
+            <div class="task-description">
+              <p>Task from Codewars:</p>
+              <p>Given a string s. You have to return another string such that even-indexed and odd-indexed characters of s are grouped and groups are space-separated.</p>
+            </div>
+            <div class="code-example">
+              <br>
+                function sortMyString(S) {</br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;let text = '';</br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;let even = '';</br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;let odd = '';</br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;for(let i = 0; i < S.length; i++){</br></S.length>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(i % 2 == 0){</br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;even += S[i];</br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else{</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;odd += S[i];</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;text = even + ' ' + odd;</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;return text;</br>
+                }</br>
+              </code>
+            </div>
+          </section>
         </div>
       </div>
     </main>
   </body>
 </html>
+
+
+<!-- function sortMyString(S) {
+  let text = '';
+let even = '';
+let odd = '';
+for(let i = 0; i < S.length; i++){
+  if(i % 2 == 0){
+    even += S[i];
+  }
+  else{
+    odd += S[i];
+  }
+}
+text = even + ' ' + odd;
+  return text;
+} -->

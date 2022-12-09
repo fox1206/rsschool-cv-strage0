@@ -50,6 +50,13 @@ h2{
   color: var(--color-green);
 }
 
+main .letter:hover{
+  position: relative;
+  top: -10px;
+  transition: all .3s ease;
+  color: var(--color-green);
+}
+
 /* ==================== MAIN CONTENT START ==================== */
 
 main{
@@ -140,7 +147,8 @@ main .main-content{
 }
 
 main .main-content .about-me,
-main .main-content .skills-description{
+main .main-content .skills-description,
+main .main-content .task-description{
   padding: var(--padding-2);
   color: var(--color-white);
   line-height: 20px;
@@ -180,13 +188,6 @@ main .main-content h1 .first-letter span:nth-child(2){
   color:var(--color-red);
 }
 
-main .letter:hover{
-  position: relative;
-  top: -10px;
-  transition: all .3s ease;
-  color: var(--color-green);
-}
-
 main .main-content .contact-me {
   position: relative;
   top: 50px;
@@ -215,6 +216,7 @@ main .my-skills{
 main .my-skills .skill{
   position: absolute;
   filter: blur(2px);
+  transition: all .3s ease-in-out;
   animation: animate-text 8s ease-in-out infinite;
 }
 
@@ -310,4 +312,10 @@ main .my-skills .skill:nth-child(14){
   }
 }
 /* ==================== SECTION MY SKILLS END ==================== */
+
+/* ==================== SECTION MY CODE START ==================== */
+main .my-code .code-example{
+  padding: var(--padding-2);
+}
+/* ==================== SECTION MY CODE END ==================== */
 /* ==================== MAIN CONTENT END ==================== */
