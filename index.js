@@ -1,9 +1,9 @@
 const audio = document.querySelector('.audio');
-const iconMusic = document.querySelector('.container svg');
+const iconMusic = document.querySelector('header svg');
 const sound = document.querySelector('.sound');
 const off = document.querySelector('.sound-off');
 const on = document.querySelector('.sound-on');
-const links =  document.querySelectorAll('.aside .links ul li a');
+const links =  document.querySelectorAll('aside ul li a');
 
 function playMusic(){
   audio.play();
