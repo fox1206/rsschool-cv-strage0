@@ -20,9 +20,7 @@
 
   --box-shadow: 0px 5px 20px var(--color-lite-gray);
 }
-/* font-family: 'Libre Franklin', sans-serif; */
-/* font-family: 'La Belle Aurore', cursive; */
-/* font-family: 'Rubik', sans-serif; */
+
 *{
   margin: 0;
   padding: 0;
@@ -73,7 +71,6 @@ p{
 
 .wrapper{
   display: grid;
-  /* gap: 20px; */
   grid-template-columns: 250px auto;
   width: 100%;
   height: 100vh;
@@ -91,47 +88,57 @@ header{
   width: 100%;
   position: fixed;
   display: flex;
-  gap: 5px;
-  justify-content: end;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 30px;
   align-items: center;
-  top: 30px;
-  right: 30px;
+  background-color: transparent;
   z-index: 10;
 }
 
-header svg{
+header .header-sound{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+header .header-sound svg{
   fill: var(--color-red);
 }
 
-header .sound{
+header .header-sound .sound{
   cursor: pointer;
 }
 
-header svg.change{
+header .header-sound svg.change{
   fill: var(--color-green);
 }
 
-header .sound-off{
+header .header-sound .sound-off{
   color: var(--color-red);
 }
 
-header .sound-off.change{
+header .header-sound .sound-off.change{
   display: none;
 }
 
-header .sound-on{
+header .header-sound .sound-on{
   display: none;
   color: var(--color-green);
 }
 
-header .sound-on.change{
+header .header-sound .sound-on.change{
   display: block;
+}
+
+header .menu-icon span{
+  display: none;
+  cursor: pointer;
 }
 /* ==================== HEADER END ==================== */
 
 /* ==================== ASIDE START ==================== */
 aside{
-  /* position: fixed; */
   height: 100vh;
   background-color: var(--color-dark);
 }
@@ -542,6 +549,10 @@ main .my-skills .skill:nth-child(14){
     transform: translateY(25px);
   }
 }
+
+main .box-skills ul{
+  display: none;
+}
 /* ==================== CODE ==================== */
 .my-code::before{
   content: '<section>';
@@ -849,28 +860,63 @@ main .list-contacts::after{
 }
 /* ==================== MAIN CONTENT END ==================== */
 
-/* ==================== MAIN CONTENT END ==================== */
-
 /* ==================== MEDIA ==================== */
-/* @media screen and (max-width: 1350px) {
-  h1{
-    font-size: 90px;
+@media screen and (max-width: 1200px){
+  .wrapper{
+    grid-template-columns: 110px auto;
   }
 
-  h2{
-    font-size: 53px;
+  aside .left-area{
+    width: 110px;
   }
+  
+  aside .my-photo{
+    display: none;
+  }
+
+  aside .sidebar ul{
+    margin-top: 100px;
+  }
+  
+  aside .sidebar ul li a{
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  aside .sidebar ul li a p{
+    display: none;
+  }
+  
+  aside .footer div{
+    flex-direction: column;
+  }
+  
+  aside .footer p{
+    padding-top: var(--padding-1);
+  }  
 }
 
-@media screen and (max-width: 1250px) {
-  main .me{
-    flex-direction: column;
-    align-items: center;
+@media screen and (max-width: 1100px){
+  .greeting::before,
+  .skills::before,
+  .my-code::before,
+  .my-projects::before,
+  .my-education::before,
+  .my-contacts::before{
+    content: '';
+  }
+  
+  .greeting::after,
+  .skills::after,
+  .my-code::after,
+  .my-projects::after,
+  .my-education::after,
+  .my-contacts::after{
+    content: '';
   }
 
-  .my-projects,
-  .education,
-  .my-contacts{
+  main .my-projects{
     height: auto;
   }
 
@@ -878,11 +924,182 @@ main .list-contacts::after{
     grid-template-columns: repeat(2, 1fr);
   }
 
-  main .education table tbody tr td:nth-child(2){
+  main .education table tbody tr:nth-child(2){
+    display: none;
+  }
+  main .education table tbody td:nth-child(2){
     display: none;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 955px){
+  h1{
+    font-size: 70px;
+  }
+
+  h2{
+    font-size: 50px;
+  }
+
+  h3{
+    font-size: 25px;
+  }
+
+  main h1::before,
+  main h3::before,
+  main h2::before,
+  main .desc::before,
+  main .code-example:before,
+  main .education table::before,
+  main .list-contacts::before{
+    content: '';
+  }
   
-} */
+  main h1::after,
+  main h3::after,
+  main h2::after,
+  main .desc::after,
+  main .skills .desc::after,
+  main .my-code .desc::after,
+  main .my-projects .desc::after,
+  main .my-education .desc::after,
+  main .my-contacts .desc::after,
+  main .code-example::after,
+  main .education table::after,
+  main .list-contacts::after{
+    content: '';
+  }
+
+  main .desc,
+  main .job-title{
+    padding: 5px;
+  }
+  
+  main .code-example,
+  main .education table{
+    padding: 10px 0 10px 5px;
+  }
+
+  .project-example ul{
+    padding-left: 5px;
+  }
+
+  .list-contacts,
+  .list-contacts li{
+    padding-left: 5px;
+  }
+}  
+
+@media screen and (max-width: 768px){
+  main .my-skills{
+    display: none;
+  }
+
+  main .box-skills{
+    padding-top: 30px;
+    padding-left: 5px;
+    padding-right: 0px;
+  }
+
+  main .box-skills ul{
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  main .box-skills ul li{
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+  }
+
+  path.fill {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: progress 3s ease-in-out infinite;
+  }
+  
+  @keyframes progress {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .wrapper{
+    grid-template-columns: 1fr;
+  }
+
+  aside{
+    position: fixed;
+    width: 250px;
+    left: -100%;
+    display: none;
+    z-index: 5;
+    box-shadow: var(--box-shadow);
+    animation: show .3s ease forwards;
+  }
+
+  @keyframes show {
+    to{
+      left: 0;
+    }
+  }
+
+  header .menu-icon span{
+    display: block;
+  }
+  
+  aside .left-area{
+    width: 250px;
+  }
+  
+  aside .left-area{
+    position: fixed;
+    width: 250px;
+  }  
+
+  aside .sidebar{
+    margin-top: -40px;
+  }
+  
+  aside .sidebar ul li a{
+    justify-content: flex-start;
+    padding: var(--padding-1);
+  }
+  
+  aside .sidebar ul li a p{
+    display: block;
+  }
+  
+  aside .footer div{
+    flex-direction: row;
+  }
+
+  aside .top{
+    display: flex;
+    justify-content: end;
+  }
+
+  aside .close{
+    position: relative;
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 20;
+  }
+
+  main{
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .project-example ul{
+    grid-template-columns: 1fr;
+  }
+}  
