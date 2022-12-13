@@ -102,3 +102,10 @@ closeBTN.addEventListener('click', () => {
   leftMenu.style.display = 'none';
   menuBtn.style.display = 'block';
 });
+
+links.forEach(item => {
+  item.addEventListener('click', () => {
+    leftMenu.style.display = 'none';
+    menuBtn.style.display = 'block';
+  })
+});
