@@ -934,15 +934,15 @@ main .list-contacts::after{
 
 @media screen and (max-width: 955px){
   h1{
-    font-size: 70px;
+    font-size: 67px;
   }
 
   h2{
-    font-size: 50px;
+    font-size: 46px;
   }
 
   h3{
-    font-size: 25px;
+    font-size: 23px;
   }
 
   main h1::before,
@@ -1034,17 +1034,13 @@ main .list-contacts::after{
   aside{
     position: fixed;
     width: 250px;
-    left: -100%;
-    display: none;
     z-index: 5;
     box-shadow: var(--box-shadow);
-    animation: show .3s ease forwards;
+    transform: translateX(-110%);
   }
 
-  @keyframes show {
-    to{
-      left: 0;
-    }
+  .show{
+    transform: translateX(0);
   }
 
   header .menu-icon span{
