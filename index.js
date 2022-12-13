@@ -5,6 +5,7 @@ const off = document.querySelector('.sound-off');
 const on = document.querySelector('.sound-on');
 const links =  document.querySelectorAll('aside ul li a');
 
+
 function playMusic(){
   audio.play();
 }
@@ -89,23 +90,20 @@ progress.forEach(item => {
 
 // МЕНЮ
 const menuBtn = document.querySelector('.header .menu-icon span');
-const closeBTN = document.querySelector('aside .close');
+const closeBtn = document.querySelector('aside .close');
 const leftMenu = document.querySelector('aside');
 
 menuBtn.addEventListener('click', () => {
-  leftMenu.style.display = 'block';
-  leftMenu.style.zIndex = '30';
-  menuBtn.style.display = 'none';
+  leftMenu.classList.add('show');
+  leftMenu.style.zIndex = 70;
 });
 
-closeBTN.addEventListener('click', () => {
-  leftMenu.style.display = 'none';
-  menuBtn.style.display = 'block';
+closeBtn.addEventListener('click', () => {
+  leftMenu.classList.remove('show');
 });
 
 links.forEach(item => {
   item.addEventListener('click', () => {
-    leftMenu.style.display = 'none';
-    menuBtn.style.display = 'block';
+    leftMenu.classList.remove('show');
   })
 });
